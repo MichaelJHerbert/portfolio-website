@@ -1,0 +1,225 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevJane Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="social-header">
+        <ul class="social-header__list">
+          <li class="social-header__item">
+            <a
+              href="https://github.com/michaeljherbert"
+              class="social-header__link"
+              target="_blank"
+              ><i class="fab fa-github social-header__btn"></i
+            ></a>
+          </li>
+          <li class="social-header__item">
+            <a
+              href="https://freecodecamp.org/michaeljherbert"
+              class="social-header__link"
+              target="_blank"
+              ><i class="fab fa-free-code-camp social-header__btn"></i
+            ></a>
+          </li>
+          <li class="social-header__item">
+            <a
+              href="https://codepen.io/michaeljherbert"
+              class="social-header__link"
+              target="_blank"
+              ><i class="fab fa-codepen social-header__btn"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Michael Herbert</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Full-Stack Dev
+      </p>
+      <img
+        src="img/dev-jane-01.jpg"
+        alt="a picture of Jane Smith smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li class="skill-list__item">HTML</li>
+            <li class="skill-list__item">CSS</li>
+            <li class="skill-list__item">Javascript</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Tools & Frameworks</h3>
+          <ul class="skill-list">
+            <li class="skill-list__item">React</li>
+            <li class="skill-list__item">Redux</li>
+            <li class="skill-list__item">D3.js</li>
+            <li class="skill-list__item">Node.js</li>
+            <li class="skill-list__item">SASS</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Databases & Other</h3>
+          <ul class="skill-list">
+            <li class="skill-list__item">MongoDB</li>
+            <li class="skill-list__item">Mongoose</li>
+            <li class="skill-list__item">Functional & Unit Testing</li>
+            <li class="skill-list__item">Microservices & APIs</li>
+            <li class="skill-list__item">Git</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#work" class="btn">See my work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & Developer based out of NYC
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit eum,
+          expedita voluptatum nisi commodi, eos atque ullam magnam cum eaque
+          molestiae perspiciatis adipisci doloremque quasi voluptatem voluptate,
+          corrupti asperiores sapiente?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          optio inventore aliquid nulla debitis sequi, officiis laudantium
+          repellat deleniti doloribus quae molestiae deserunt maiores temporibus
+          neque delectus, assumenda animi doloremque!
+        </p>
+      </div>
+
+      <img
+        src="img/dev-jane-02.jpg"
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of work from my portfolio
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio Item 01 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio Item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio Item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio Item 04 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="mailto:michaeljherbert@live.co.uk"
+            class="social-list__link social-list__btn"
+            ><i class="fas fa-inbox social-list__icon"></i
+            >michaeljherbert@live.co.uk</a
+          >
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://github.com/michaeljherbert"
+            class="social-list__link social-list__btn"
+            target="_blank"
+            ><i class="fab fa-github social-list__icon"></i>MichaelJHerbert</a
+          >
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://freecodecamp.org/michaeljherbert"
+            class="social-list__link social-list__btn"
+            target="_blank"
+            ><i class="fab fa-free-code-camp social-list__icon"></i
+            >michaeljherbert</a
+          >
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://codepen.io/michaeljherbert"
+            class="social-list__link social-list__btn"
+            target="_blank"
+            ><i class="fab fa-codepen social-list__icon"></i>michaeljherbert</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
